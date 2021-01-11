@@ -1,0 +1,76 @@
+{
+    "spawnDataName": "Level_01",
+    "timeToStartFirstSpawn": 10.0,
+    "timeBetweenSequencedSpawns": 5.0,
+    "sequencedSpawns": [
+        {
+            "spawnGroupName": "Easy Enemies",
+            "enemySpawnGroup": [
+                {
+                    "direction": {
+                        "x": -1.0,
+                        "y": 0.0
+                    },
+                    "hp": 10,
+                    "speed": 0.5,
+                    "drop": {
+                        "$id": "3"
+                    },
+                    "Spawner": null,
+                    "$type": "CommonEnemy"
+                },
+                {
+                    "direction": {
+                        "x": -1.0,
+                        "y": 0.0
+                    },
+                    "hp": 15,
+                    "speed": 0.3,
+                    "drop": {
+                        "$ref": "3"
+                    },
+                    "Spawner": null,
+                    "$type": "CommonEnemy"
+                },
+                {
+                    "direction": {
+                        "x": -1.0,
+                        "y": 0.0
+                    },
+                    "hp": 30,
+                    "speed": 0.2,
+                    "drop": {
+                        "$ref": "3"
+                    },
+                    "Spawner": null,
+                    "$type": "CommonEnemy"
+                }
+            ],
+            "inOrderEnemy": false,
+            "randomEnemy": true,
+            "randomWeightedEnemy": false,
+            "weightsEnemy": null,
+            "spawnPositions": [
+                "Top",
+                "Middle1",
+                "Bottom"
+            ],
+            "inOrderSpawn": false,
+            "randomSpawnArea": true,
+            "randomWeightedSpawnArea": false,
+            "weightsSpawnArea": null,
+            "spawner": {
+                "numberOfWaves": 2,
+                "totalEnemiesPerWave": 3,
+                "spawnerName": "Easy Wave",
+                "delayBetweenSpawns": 10.0,
+                "$type": "WaveSpawner"
+            }
+        }
+    ],
+    "spawnBossAfterSequence": false,
+    "boss": null,
+    "parallelSpawns": null,
+    "beginSequencedSpawnAtStart": false,
+    "beginParallelSpawnAtStart": false
+}
