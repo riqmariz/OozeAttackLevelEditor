@@ -14,72 +14,23 @@
                 "spawnGroupName": "Level 2",
                 "enemySpawnGroup": [
                     {
-                        "direction": {
-                            "x": -1.0,
-                            "y": 0.0
-                        },
-                        "hp": 10,
-                        "speed": 0.5,
-                        "drop": {
-
-                        },
-                        "Spawner": null,
+                        "$content": "Fast Basic Enemy",
                         "$type": "CommonEnemy"
                     },
                     {
-                        "direction": {
-                            "x": -1.0,
-                            "y": 0.0
-                        },
-                        "hp": 15,
-                        "speed": 0.3,
-                        "drop": {
-
-                        },
-                        "Spawner": null,
+                        "$content": "Normal Basic Enemy",
                         "$type": "CommonEnemy"
                     },
                     {
-                        "direction": {
-                            "x": -1.0,
-                            "y": 0.0
-                        },
-                        "hp": 30,
-                        "speed": 0.2,
-                        "drop": {
-
-                        },
-                        "Spawner": null,
+                        "$content": "Tank Basic Enemy",
                         "$type": "CommonEnemy"
                     },
                     {
-                        "dodges": 1,
-                        "moveDirection": {
-                            "x": -1.0,
-                            "y": 0.0
-                        },
-                        "hp": 15,
-                        "speed": 0.3,
-                        "drop": {
-
-                        },
-                        "Spawner": null,
+                        "$content": "Normal Dodger Enemy",
                         "$type": "DodgerEnemy"
                     },
                     {
-                        "jumps": 1,
-                        "jumpMagnitude": 1.0,
-                        "jumpDistance": 1.25,
-                        "moveDirection": {
-                            "x": -1.0,
-                            "y": 0.0
-                        },
-                        "hp": 15,
-                        "speed": 0.3,
-                        "drop": {
-
-                        },
-                        "Spawner": null,
+                        "$content": "Normal Jumper Enemy",
                         "$type": "JumperEnemy"
                     }
                 ],
@@ -116,9 +67,7 @@
                 "spawnGroupName": "",
                 "enemySpawnGroup": [
                     {
-                        "value": 25,
-                        "duration": 5.0,
-                        "Spawner": null,
+                        "$content": "Coin",
                         "$type": "Coin"
                     }
                 ],
@@ -140,13 +89,14 @@
                     "delayBetweenSpawns": 5.0,
                     "$type": "ProbabilisticSpawner"
                 },
-                "$id": "15"
+                "$id": "10"
             },
             {
-                "$ref": "15"
+                "$ref": "10"
             }
         ],
         "beginSequencedSpawnAtStart": true,
         "beginParallelSpawnAtStart": true
-    }
+    },
+    "$type": "LevelInfo"
 }

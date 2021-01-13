@@ -12,16 +12,7 @@
                 "spawnGroupName": "Level 1",
                 "enemySpawnGroup": [
                     {
-                        "direction": {
-                            "x": -1.0,
-                            "y": 0.0
-                        },
-                        "hp": 15,
-                        "speed": 0.3,
-                        "drop": {
-
-                        },
-                        "Spawner": null,
+                        "$content": "Normal Basic Enemy",
                         "$type": "CommonEnemy"
                     }
                 ],
@@ -54,9 +45,7 @@
                 "spawnGroupName": "",
                 "enemySpawnGroup": [
                     {
-                        "value": 25,
-                        "duration": 5.0,
-                        "Spawner": null,
+                        "$content": "Coin",
                         "$type": "Coin"
                     }
                 ],
@@ -78,13 +67,14 @@
                     "delayBetweenSpawns": 5.0,
                     "$type": "ProbabilisticSpawner"
                 },
-                "$id": "7"
+                "$id": "6"
             },
             {
-                "$ref": "7"
+                "$ref": "6"
             }
         ],
         "beginSequencedSpawnAtStart": true,
         "beginParallelSpawnAtStart": true
-    }
+    },
+    "$type": "LevelInfo"
 }
