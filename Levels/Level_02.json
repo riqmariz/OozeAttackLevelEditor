@@ -1,16 +1,31 @@
 {
     "buffsAvailable": [
         "ApoloLight",
-        "AresRage"
+        "AresRage",
+        "AtenasWisdom",
+        "ArtemisDexterity"
     ],
     "levelData": {
-        "spawnDataName": "Level 1",
+        "spawnDataName": "Level 2",
         "timeToStartFirstSpawn": 3.0,
         "timeBetweenSequencedSpawns": 5.0,
         "sequencedSpawns": [
             {
-                "spawnGroupName": "Level 1",
+                "spawnGroupName": "Level 2",
                 "enemySpawnGroup": [
+                    {
+                        "direction": {
+                            "x": -1.0,
+                            "y": 0.0
+                        },
+                        "hp": 10,
+                        "speed": 0.5,
+                        "drop": {
+
+                        },
+                        "Spawner": null,
+                        "$type": "CommonEnemy"
+                    },
                     {
                         "direction": {
                             "x": -1.0,
@@ -23,6 +38,49 @@
                         },
                         "Spawner": null,
                         "$type": "CommonEnemy"
+                    },
+                    {
+                        "direction": {
+                            "x": -1.0,
+                            "y": 0.0
+                        },
+                        "hp": 30,
+                        "speed": 0.2,
+                        "drop": {
+
+                        },
+                        "Spawner": null,
+                        "$type": "CommonEnemy"
+                    },
+                    {
+                        "dodges": 1,
+                        "moveDirection": {
+                            "x": -1.0,
+                            "y": 0.0
+                        },
+                        "hp": 15,
+                        "speed": 0.3,
+                        "drop": {
+
+                        },
+                        "Spawner": null,
+                        "$type": "DodgerEnemy"
+                    },
+                    {
+                        "jumps": 1,
+                        "jumpMagnitude": 1.0,
+                        "jumpDistance": 1.25,
+                        "moveDirection": {
+                            "x": -1.0,
+                            "y": 0.0
+                        },
+                        "hp": 15,
+                        "speed": 0.3,
+                        "drop": {
+
+                        },
+                        "Spawner": null,
+                        "$type": "JumperEnemy"
                     }
                 ],
                 "inOrderEnemy": false,
@@ -30,19 +88,23 @@
                 "randomWeightedEnemy": false,
                 "weightsEnemy": [],
                 "spawnPositions": [
+                    "Top",
+                    "TopMiddle",
                     "Middle1",
-                    "Middle2"
+                    "Middle2",
+                    "BottomMiddle",
+                    "Bottom"
                 ],
                 "inOrderSpawn": false,
                 "randomSpawnArea": true,
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": [],
                 "spawner": {
-                    "waveTimer": 15.0,
-                    "numberOfWaves": 1,
-                    "totalEnemiesPerWave": 1,
+                    "waveTimer": 30.0,
+                    "numberOfWaves": 4,
+                    "totalEnemiesPerWave": 10,
                     "spawnerName": "",
-                    "delayBetweenSpawns": 5.0,
+                    "delayBetweenSpawns": 10.0,
                     "$type": "TimedWaveSpawner"
                 }
             }
@@ -78,10 +140,10 @@
                     "delayBetweenSpawns": 5.0,
                     "$type": "ProbabilisticSpawner"
                 },
-                "$id": "7"
+                "$id": "15"
             },
             {
-                "$ref": "7"
+                "$ref": "15"
             }
         ],
         "beginSequencedSpawnAtStart": true,
