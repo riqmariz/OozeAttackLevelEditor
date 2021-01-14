@@ -43,7 +43,6 @@ Algumas infos não cabem serem explicadas aqui, pois estão detalhadas no Game D
 * **Level Info**
  <br/>
  Classe principal que tem as informações necessárias para um Level do Ooze Attack
-
     * buffsAvailable[] (Lista de buffs disponíveis)
     <br/>
     Esses serão os buffs disponíveis dentro do Level
@@ -51,7 +50,6 @@ Algumas infos não cabem serem explicadas aqui, pois estão detalhadas no Game D
         * Areas Rage
         * Atenas Wisdom
         * Artemis Dexterity
-    
     * **[SpawnData]** spawnData (Dados de Spawn)
      <br/>
      Classe que contém as informações de spawn
@@ -102,8 +100,7 @@ Algumas infos não cabem serem explicadas aqui, pois estão detalhadas no Game D
     * **[SpawnArea]** spawnPositions[] (Lista Posições de Spawn)
     <br/>
     Lista de spawn areas em que os spawnáveis podem ser spawnados, ou seja, local em que eles podem ser spawnados.
-
-    Cada spawn area é delimitado previamente pelo GDD
+    Cada spawn area é delimitado previamente pelo GDD.
         * Coin Area
         * Top
         * TopMiddle
@@ -111,7 +108,6 @@ Algumas infos não cabem serem explicadas aqui, pois estão detalhadas no Game D
         * Middle 2
         * BottomMiddle
         * Bottom
-        
     * inOrderSpawn (Spawn Area em Ordem)
     <br/>
     Funciona analogamente a variável inOrderEnemy, porém, se refere a lista de spawn area e de como será selecionada.
@@ -155,7 +151,6 @@ Esta classe define como os objetos spawnáveis serão spawnados, como por exempl
             * waveTimer (Contagem regressiva da Onda)
             <br/>
             tempo para a próxima wave ser spawnada, independente da wave atual, ter sido terminada ou não.
-
         * Once Spawner (Spawner "Único", ou, uma vez)
         <br/>
         Esse spawner ele funciona da seguinte forma: Um objeto será spawnado uma única vez, o objeto e só. Ele pode acabar quando matar todos inimigos, ou no momento tiver terminado de spawnar os inimgos, basta escolher.
@@ -185,7 +180,6 @@ Esta classe define como os objetos spawnáveis serão spawnados, como por exempl
             * timeToStopSpawner (tempo para parar o spawner)
             <br/>
             Tempo em segundos para parar o spawner, ou seja, depois que passar o tempo, o spawner dará como concluído, tendo spawnado ou não, ou seja, tendo "ganhado" ou não o sorteio, ele dará como concluído, quando o tempo acabar.
-    
         * Refill Spawner (Spawner com reposição)
         <br/>
         Esse spawner funciona fazendo reposições dos inimgos que foram mortos, ele sempre tenta manter uma certa quantidade de inimigos dentro do jogo por um determinado tempo, e assim, conclui.
