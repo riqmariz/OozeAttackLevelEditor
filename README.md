@@ -43,16 +43,18 @@ Algumas infos não cabem serem explicadas aqui, pois estão detalhadas no Game D
 * **Level Info**
  <br/>
  Classe principal que tem as informações necessárias para um Level do Ooze Attack
-    * buffsAvailable[] (Lista de buffs disponíveis)
-    <br/>
+    <ul> 
+    <li>buffsAvailable[] (Lista de buffs disponíveis)</li>
     Esses serão os buffs disponíveis dentro do Level
-        * Apolo Light
-        * Areas Rage
-        * Atenas Wisdom
-        * Artemis Dexterity
-    * **[SpawnData]** spawnData (Dados de Spawn)
-     <br/>
+    <ul>
+        <li>Apolo Light</li>
+        <li>Areas Rage</li>
+        <li>Atenas Wisdom</li>
+        <li>Artemis Dexterity</li>
+    </ul>
+    <li><strong>[SpawnData]</strong> spawnData (Dados de Spawn)</li>
      Classe que contém as informações de spawn
+     </ul>
 
  <br/>     
 
