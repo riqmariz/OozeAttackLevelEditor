@@ -65,7 +65,7 @@ Algumas infos não cabem serem explicadas aqui, pois estão detalhadas no Game D
     * timeToStartFirstSpawn (Tempo para começar o primeiro Spawn)
      <br/>
      tempo em segundos para especificar quanto tempo o primeiro spawn acontecerá, ou seja, quando o spawn de fato começará a entrar em ação.
-     * timeBetweenSequencedSpawns (Tempo entre spawns sequenciais)
+    * timeBetweenSequencedSpawns (Tempo entre spawns sequenciais)
     <br/>
     tempo em segundos para especifificar o tempo entre spawns sequenciais, ou seja, o tempo para começar o próximo spawn depois que um spawn foi terminado.
     * **[SpawnGroup]** sequencedSpawns[] (Lista de Spawns Sequenciais)
