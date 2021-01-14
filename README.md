@@ -75,7 +75,7 @@ Algumas infos não cabem serem explicadas aqui, pois estão detalhadas no Game D
 
 <br/>
 
-<li> **Spawn Group** </li>
+<li> <strong>Spawn Group</strong> </li>
     <ul>
     <li> spawnGroupName (Nome do Grupo de Spawn)</li>
      essa varíavel corresponde ao nome do arquivo, pode não ser tão relevante, serve mais para organização.
