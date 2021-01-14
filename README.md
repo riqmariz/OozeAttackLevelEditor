@@ -40,8 +40,8 @@ O propósito dessa seção é tentar dissecar as classes e explicar o que cada v
 
 Algumas infos não cabem serem explicadas aqui, pois estão detalhadas no Game Design Document (GDD)
 
-* **Level Info**
- <br/>
+<ul>
+<li> <strong>Level Info</strong> </li>
  Classe principal que tem as informações necessárias para um Level do Ooze Attack
     <ul> 
     <li>buffsAvailable[] (Lista de buffs disponíveis)</li>
@@ -58,8 +58,7 @@ Algumas infos não cabem serem explicadas aqui, pois estão detalhadas no Game D
 
  <br/>     
 
-* **Spawn Data**
- <br/>
+<li> <strong>Spawn Data</strong> </li>
     Classe contém todas as informações para realizar todos os spawns do Level, tendo spawns sequenciados e spawns paralelos associados.
     <ul>
     <li>spawnDataName (Nome dos dados de spawn)</li>
@@ -76,8 +75,7 @@ Algumas infos não cabem serem explicadas aqui, pois estão detalhadas no Game D
 
 <br/>
 
-* **Spawn Group**
-<br/>
+<li> **Spawn Group** </li>
     <ul>
     <li> spawnGroupName (Nome do Grupo de Spawn)</li>
      essa varíavel corresponde ao nome do arquivo, pode não ser tão relevante, serve mais para organização.
@@ -114,11 +112,9 @@ Algumas infos não cabem serem explicadas aqui, pois estão detalhadas no Game D
     <li><strong>[Spawner]</strong> spawner (Tipo de Spawner)</li>
     escolher qual é o tipo de <strong>Spawner</strong> que será utilizado, ou seja, escolher como cada spawn será spawnado, literalmente, "como". Por exemplo, os spawnaveis serão spawnados por waves, ou então serão spawnados por waves com tempo...
     </ul>
-
 <br/>
 
-* **Spawner**
-<br/>
+<li> <strong>Spawner</strong> </li>
 Esta classe define como os objetos spawnáveis serão spawnados, como por exemplo, será em forma de waves, waves com tempo, ou então vai spawnar com refil, toda vez que um objeto for eliminado, ele será reposto até certo tempo... Vários tipos, e os disponíveis estarão detalhados mais abaixo. Porém, há algumas variáveis que são comuns entre eles.
     <ul>
     <li>spawnerName (Nome do Spawner)</li>
@@ -190,5 +186,4 @@ Esta classe define como os objetos spawnáveis serão spawnados, como por exempl
             </ul>
         </ul>
     </ul>
-<br/>
 
