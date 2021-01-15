@@ -4,7 +4,7 @@
     ],
     "levelData": {
         "spawnDataName": "Lv1",
-        "timeToStartFirstSpawn": 10.0,
+        "timeToStartFirstSpawn": 5.0,
         "timeBetweenSequencedSpawns": 5.0,
         "sequencedSpawns": [
             {
@@ -60,11 +60,7 @@
                     "spawnerName": "OnceSpawner",
                     "delayBetweenSpawns": 1.0,
                     "$type": "OnceSpawner"
-                },
-                "$id": "6"
-            },
-            {
-                "$ref": "6"
+                }
             }
         ],
         "parallelSpawns": [
