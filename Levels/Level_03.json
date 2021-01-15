@@ -90,7 +90,7 @@
                     "chanceToSpawn": 100.0,
                     "timeToStopSpawner": 9999.0,
                     "spawnerName": "coin drop",
-                    "delayBetweenSpawns": 6.0,
+                    "delayBetweenSpawns": 5.0,
                     "$type": "ProbabilisticSpawner"
                 }
             }
