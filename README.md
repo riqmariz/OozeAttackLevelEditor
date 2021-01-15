@@ -91,13 +91,12 @@ Algumas infos não cabem serem explicadas aqui, pois estão detalhadas no Game D
     Ao colocar a variável randomWeightedEnemy como true, os valores dessa lista serão considerados, caso contrário, será ignorado. Essa lista se refere ao peso que o objeto terá na hora de sortear aleatoriamente um objeto spawnável. Ou seja, você pode colocar algo, para ter mais chances que outras e vice-versa.
     <li><strong>[SpawnArea]</strong> spawnPositions[] (Lista Posições de Spawn)</li>
     Lista de spawn areas em que os spawnáveis podem ser spawnados, ou seja, local em que eles podem ser spawnados.
-    Cada spawn area é delimitado previamente pelo GDD.
+    Cada spawn area é delimitado previamente pelo GDD. <img src="Readme Images/spawnAreasPic.PNG" alt="Spawn Areas Representation">
     <ul>
        <li> Coin Area </li>
         <li> Top </li>
        <li> TopMiddle </li>
-        <li> Middle 1 </li>
-        <li> Middle 2 </li>
+        <li> Middle</li>
        <li> BottomMiddle </li>
         <li> Bottom </li>
     </ul>
