@@ -36,7 +36,12 @@
             },
             {
                 "spawnGroupName": "Normal basic enemy",
-                "enemySpawnGroup": null,
+                "enemySpawnGroup": [
+                    {
+                        "$content": "Normal Basic Enemy Variant",
+                        "$type": "CommonEnemy"
+                    }
+                ],
                 "inOrderEnemy": true,
                 "randomEnemy": false,
                 "randomWeightedEnemy": false,
