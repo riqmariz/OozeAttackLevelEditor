@@ -3,16 +3,16 @@
         "ApoloLight"
     ],
     "levelData": {
-        "spawnDataName": "Lv1",
-        "timeToStartFirstSpawn": 15.0,
-        "timeBetweenSequencedSpawns": 8.0,
+        "spawnDataName": "Level_03",
+        "timeToStartFirstSpawn": 3.0,
+        "timeBetweenSequencedSpawns": 5.0,
         "sequencedSpawns": [
             {
-                "spawnGroupName": "Basic (onceSpawner)",
+                "spawnGroupName": "first coin",
                 "enemySpawnGroup": [
                     {
-                        "$content": "Normal Basic Enemy Variant",
-                        "$type": "CommonEnemy"
+                        "$content": "Coin Variant",
+                        "$type": "Coin"
                     }
                 ],
                 "inOrderEnemy": true,
@@ -20,28 +20,53 @@
                 "randomWeightedEnemy": false,
                 "weightsEnemy": null,
                 "spawnPositions": [
-                    "Middle"
+                    "CoinArea"
                 ],
                 "inOrderSpawn": true,
                 "randomSpawnArea": false,
                 "randomWeightedSpawnArea": false,
-                "weightsSpawnArea": [],
+                "weightsSpawnArea": null,
                 "spawner": {
-                    "totalEnemies": 4,
+                    "totalEnemies": 1,
                     "howToComplete": "AfterKillingAllEnemies",
-                    "spawnerName": "OnceSpawner",
-                    "delayBetweenSpawns": 8.0,
+                    "spawnerName": "dsaddas",
+                    "delayBetweenSpawns": 5.0,
                     "$type": "OnceSpawner"
-                },
-                "$id": "3"
+                }
             },
             {
-                "$ref": "3"
+                "spawnGroupName": "Level 1",
+                "enemySpawnGroup": [
+                    {
+                        "$content": "Normal Basic Enemy",
+                        "$type": "CommonEnemy"
+                    }
+                ],
+                "inOrderEnemy": false,
+                "randomEnemy": true,
+                "randomWeightedEnemy": false,
+                "weightsEnemy": [],
+                "spawnPositions": [
+                    "Middle",
+                    "BottomMiddle"
+                ],
+                "inOrderSpawn": false,
+                "randomSpawnArea": true,
+                "randomWeightedSpawnArea": false,
+                "weightsSpawnArea": [],
+                "spawner": {
+                    "waveTimer": 15.0,
+                    "numberOfWaves": 1,
+                    "totalEnemiesPerWave": 1,
+                    "spawnerName": "",
+                    "delayBetweenSpawns": 5.0,
+                    "$type": "TimedWaveSpawner"
+                }
             }
         ],
         "parallelSpawns": [
             {
-                "spawnGroupName": "Coin drop game",
+                "spawnGroupName": "parrallel",
                 "enemySpawnGroup": [
                     {
                         "$content": "Coin Variant",
@@ -61,9 +86,9 @@
                 "weightsSpawnArea": null,
                 "spawner": {
                     "chanceToSpawn": 100.0,
-                    "timeToStopSpawner": 9999.0,
-                    "spawnerName": "coin drop",
-                    "delayBetweenSpawns": 4.0,
+                    "timeToStopSpawner": 99999.0,
+                    "spawnerName": "dasdasdas",
+                    "delayBetweenSpawns": 6.0,
                     "$type": "ProbabilisticSpawner"
                 }
             }
