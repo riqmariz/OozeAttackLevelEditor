@@ -61,9 +61,7 @@
                     "delayBetweenSpawns": 4.0,
                     "$type": "OnceSpawner"
                 }
-            }
-        ],
-        "parallelSpawns": [
+            },
             {
                 "spawnGroupName": "Coin drop game",
                 "enemySpawnGroup": [
@@ -91,6 +89,7 @@
                 }
             }
         ],
+        "parallelSpawns": [],
         "beginSequencedSpawnAtStart": true,
         "beginParallelSpawnAtStart": true
     },
