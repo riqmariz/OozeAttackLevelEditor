@@ -4,7 +4,7 @@
     ],
     "levelData": {
         "spawnDataName": "Lv1",
-        "timeToStartFirstSpawn": 10.0,
+        "timeToStartFirstSpawn": 5.0,
         "timeBetweenSequencedSpawns": 5.0,
         "sequencedSpawns": [
             {
@@ -55,16 +55,12 @@
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": [],
                 "spawner": {
-                    "totalEnemies": 4,
+                    "totalEnemies": 6,
                     "howToComplete": "AfterKillingAllEnemies",
                     "spawnerName": "OnceSpawner",
-                    "delayBetweenSpawns": 1.0,
+                    "delayBetweenSpawns": 4.0,
                     "$type": "OnceSpawner"
-                },
-                "$id": "6"
-            },
-            {
-                "$ref": "6"
+                }
             }
         ],
         "parallelSpawns": [
@@ -90,7 +86,7 @@
                     "chanceToSpawn": 100.0,
                     "timeToStopSpawner": 9999.0,
                     "spawnerName": "coin drop",
-                    "delayBetweenSpawns": 6.0,
+                    "delayBetweenSpawns": 5.0,
                     "$type": "ProbabilisticSpawner"
                 }
             }
