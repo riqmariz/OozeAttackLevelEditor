@@ -12,7 +12,8 @@
                 "enemySpawnGroup": [
                     {
                         "$content": "Coin Variant",
-                        "$type": "Coin"
+                        "$type": "Coin",
+                        "$id": "4"
                     }
                 ],
                 "inOrderEnemy": true,
@@ -32,11 +33,7 @@
                     "spawnerName": "First coin drop",
                     "delayBetweenSpawns": 3.0,
                     "$type": "OnceSpawner"
-                },
-                "$id": "3"
-            },
-            {
-                "$ref": "3"
+                }
             },
             {
                 "spawnGroupName": "Basic (onceSpawner)",
@@ -58,15 +55,42 @@
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": [],
                 "spawner": {
-                    "totalEnemies": 4,
+                    "totalEnemies": 6,
                     "howToComplete": "AfterKillingAllEnemies",
                     "spawnerName": "OnceSpawner",
-                    "delayBetweenSpawns": 8.0,
+                    "delayBetweenSpawns": 4.0,
                     "$type": "OnceSpawner"
                 }
             }
         ],
-        "parallelSpawns": [],
+        "parallelSpawns": [
+            {
+                "spawnGroupName": "Coin drop game",
+                "enemySpawnGroup": [
+                    {
+                        "$ref": "4"
+                    }
+                ],
+                "inOrderEnemy": true,
+                "randomEnemy": false,
+                "randomWeightedEnemy": false,
+                "weightsEnemy": null,
+                "spawnPositions": [
+                    "CoinArea"
+                ],
+                "inOrderSpawn": true,
+                "randomSpawnArea": false,
+                "randomWeightedSpawnArea": false,
+                "weightsSpawnArea": null,
+                "spawner": {
+                    "chanceToSpawn": 100.0,
+                    "timeToStopSpawner": 9999.0,
+                    "spawnerName": "coin drop",
+                    "delayBetweenSpawns": 5.0,
+                    "$type": "ProbabilisticSpawner"
+                }
+            }
+        ],
         "beginSequencedSpawnAtStart": true,
         "beginParallelSpawnAtStart": true
     },
