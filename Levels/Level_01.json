@@ -21,8 +21,8 @@
                 "randomWeightedEnemy": false,
                 "weightsEnemy": [],
                 "spawnPositions": [
-                    "Middle1",
-                    "Middle2"
+                    "Middle",
+                    "BottomMiddle"
                 ],
                 "inOrderSpawn": false,
                 "randomSpawnArea": true,
