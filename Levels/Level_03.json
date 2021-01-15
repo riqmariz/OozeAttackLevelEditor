@@ -1,5 +1,7 @@
 {
-    "buffsAvailable": null,
+    "buffsAvailable": [
+        "ApoloLight"
+    ],
     "levelData": {
         "spawnDataName": "Level 01",
         "timeToStartFirstSpawn": 15.0,
