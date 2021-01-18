@@ -60,7 +60,8 @@
                     "totalEnemiesPerWave": 1,
                     "spawnerName": "1 N/B - enemy, waves: 3, delay 8s",
                     "delayBetweenSpawns": 8.0,
-                    "$type": "WaveSpawner"
+                    "$type": "WaveSpawner",
+                    "$id": "6"
                 },
                 "$id": "5"
             },
@@ -96,12 +97,7 @@
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
-                    "totalEnemies": 6,
-                    "maxRefilTime": 0.0,
-                    "howToCompleteSpawn": "KillingAllEnemies",
-                    "spawnerName": "totalE: 6, delay:10s",
-                    "delayBetweenSpawns": 10.0,
-                    "$type": "RefillSpawner"
+                    "$ref": "6"
                 }
             }
         ],
