@@ -5,7 +5,7 @@
     "levelData": {
         "spawnDataName": "Level_01",
         "timeToStartFirstSpawn": 2.0,
-        "timeBetweenSequencedSpawns": 5.0,
+        "timeBetweenSequencedSpawns": 8.0,
         "sequencedSpawns": [
             {
                 "spawnGroupName": "first coin",
@@ -32,11 +32,7 @@
                     "spawnerName": "single coin drop",
                     "delayBetweenSpawns": 1.0,
                     "$type": "OnceSpawner"
-                },
-                "$id": "3"
-            },
-            {
-                "$ref": "3"
+                }
             },
             {
                 "spawnGroupName": "basic enemy",
@@ -65,6 +61,9 @@
                     "$type": "WaveSpawner"
                 },
                 "$id": "5"
+            },
+            {
+                "$ref": "5"
             },
             {
                 "$ref": "5"
