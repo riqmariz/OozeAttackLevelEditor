@@ -81,8 +81,8 @@
                 "randomEnemy": false,
                 "randomWeightedEnemy": true,
                 "weightsEnemy": [
-                    85.0,
-                    15.0
+                    80.0,
+                    20.0
                 ],
                 "spawnPositions": [
                     "TopMiddle",
