@@ -97,36 +97,6 @@
                 }
             },
             {
-                "spawnGroupName": "Final Wave basic",
-                "enemySpawnGroup": [
-                    {
-                        "$content": "Normal Basic Enemy Variant",
-                        "$type": "CommonEnemy"
-                    }
-                ],
-                "inOrderEnemy": false,
-                "randomEnemy": true,
-                "randomWeightedEnemy": false,
-                "weightsEnemy": null,
-                "spawnPositions": [
-                    "TopMiddle",
-                    "Middle",
-                    "BottomMiddle"
-                ],
-                "inOrderSpawn": false,
-                "randomSpawnArea": true,
-                "randomWeightedSpawnArea": false,
-                "weightsSpawnArea": null,
-                "spawner": {
-                    "numberOfWaves": 1,
-                    "totalEnemiesPerWave": 10,
-                    "spawnerName": "final wave ",
-                    "delayBetweenSpawns": 2.0,
-                    "$type": "WaveSpawner",
-                    "$id": "10"
-                }
-            },
-            {
                 "spawnGroupName": "E-basic Normal/Tank",
                 "enemySpawnGroup": [
                     {
@@ -192,8 +162,16 @@
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
-                    "$ref": "10"
-                }
+                    "numberOfWaves": 1,
+                    "totalEnemiesPerWave": 10,
+                    "spawnerName": "final wave ",
+                    "delayBetweenSpawns": 2.0,
+                    "$type": "WaveSpawner"
+                },
+                "$id": "11"
+            },
+            {
+                "$ref": "11"
             }
         ],
         "parallelSpawns": [
