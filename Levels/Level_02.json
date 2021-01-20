@@ -5,7 +5,7 @@
     "levelData": {
         "spawnDataName": "Level_02",
         "timeToStartFirstSpawn": 2.0,
-        "timeBetweenSequencedSpawns": 9.0,
+        "timeBetweenSequencedSpawns": 8.0,
         "sequencedSpawns": [
             {
                 "spawnGroupName": "first coin",
@@ -59,7 +59,7 @@
                     "numberOfWaves": 3,
                     "totalEnemiesPerWave": 3,
                     "spawnerName": "3 N/B - enemy, waves: 3, delay 8s",
-                    "delayBetweenSpawns": 8.0,
+                    "delayBetweenSpawns": 9.0,
                     "$type": "WaveSpawner"
                 },
                 "$id": "5"
@@ -68,24 +68,17 @@
                 "$ref": "5"
             },
             {
-                "spawnGroupName": "E-basic: N. e T. ",
+                "spawnGroupName": "Final Wave basic",
                 "enemySpawnGroup": [
                     {
                         "$content": "Normal Basic Enemy Variant",
-                        "$type": "CommonEnemy"
-                    },
-                    {
-                        "$content": "Slow Basic Enemy Variant",
                         "$type": "CommonEnemy"
                     }
                 ],
                 "inOrderEnemy": true,
                 "randomEnemy": false,
-                "randomWeightedEnemy": true,
-                "weightsEnemy": [
-                    80.0,
-                    20.0
-                ],
+                "randomWeightedEnemy": false,
+                "weightsEnemy": null,
                 "spawnPositions": [
                     "TopMiddle",
                     "Middle",
@@ -96,12 +89,11 @@
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
-                    "totalEnemies": 4,
-                    "maxRefilTime": 20.0,
-                    "howToCompleteSpawn": "TimeOut",
-                    "spawnerName": "Final wave (E-basic: N/T; qnt: 3, refil: 2)",
-                    "delayBetweenSpawns": 5.0,
-                    "$type": "RefillSpawner"
+                    "numberOfWaves": 1,
+                    "totalEnemiesPerWave": 8,
+                    "spawnerName": "Default Spawner",
+                    "delayBetweenSpawns": 3.0,
+                    "$type": "WaveSpawner"
                 }
             }
         ],
