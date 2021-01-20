@@ -1,4 +1,4 @@
-# Ooze Attack Level Editor **v0.3.0**
+# Ooze Attack Level Editor **v0.3.1**
 
 Este repositório é um local para subir os arquivos de level do jogo Ooze Attack para poder testá-los e editá-los. Fique atento as versões da documentação.
 
@@ -9,9 +9,9 @@ Este repositório é um local para subir os arquivos de level do jogo Ooze Attac
 
 - Documentação #
 
-- Nova forma de serialização do json*
+- Adição da funcionalidade de carregar níveis do computador
 
-- Novo link para download da build standalone do Level editor v0.3.0 *:  [link](https://drive.google.com/file/d/18Ie17mcO9FvIy0bhAcF_Tx2emfZRGKL0/view?usp=sharing)
+- Novo link para download da build standalone do Level editor v0.3.1 *:  [link](https://drive.google.com/file/d/1ZGhZ_9SRtrMvxuZjz_7IfDGu9bFwKFUR/view?usp=sharing)
 
 # Dicas
 
@@ -20,6 +20,10 @@ Nothing to see here, yet.
 # Documentação #
 
 É importante mencionar que essa documentação é só uma forma de tentar manter as regras/funcionalidades por escrito dos elementos específicos do jogo Ooze Attack, que virá a modificar ao longo do processo de evolução então é de bastante importância, sempre verificar a TAG da documentação para checar o versionamento de tal.
+
+## Carregamento de Levels
+
+Para carregar níveis basta clicar no botão 'Load Levels' no menu principal e escolher o arquivo a ser carregado no Editor.
 
 ## Geração de Level
 
