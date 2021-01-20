@@ -1,0 +1,100 @@
+{
+    "buffsAvailable": null,
+    "levelData": {
+        "spawnDataName": "Level_1",
+        "timeToStartFirstSpawn": 2.0,
+        "timeBetweenSequencedSpawns": 9.0,
+        "sequencedSpawns": [
+            {
+                "spawnGroupName": "first coin",
+                "enemySpawnGroup": [
+                    {
+                        "$content": "Coin Variant",
+                        "$type": "Coin"
+                    }
+                ],
+                "inOrderEnemy": true,
+                "randomEnemy": false,
+                "randomWeightedEnemy": false,
+                "weightsEnemy": [],
+                "spawnPositions": [
+                    "CoinArea"
+                ],
+                "inOrderSpawn": true,
+                "randomSpawnArea": false,
+                "randomWeightedSpawnArea": false,
+                "weightsSpawnArea": null,
+                "spawner": {
+                    "totalEnemies": 1,
+                    "howToComplete": "AfterKillingAllEnemies",
+                    "spawnerName": "Single coin drop",
+                    "delayBetweenSpawns": 1.0,
+                    "$type": "OnceSpawner"
+                }
+            },
+            {
+                "spawnGroupName": "basic enemies",
+                "enemySpawnGroup": [
+                    {
+                        "$content": "Normal Basic Enemy Variant",
+                        "$type": "CommonEnemy"
+                    }
+                ],
+                "inOrderEnemy": true,
+                "randomEnemy": false,
+                "randomWeightedEnemy": false,
+                "weightsEnemy": null,
+                "spawnPositions": [
+                    "Middle"
+                ],
+                "inOrderSpawn": true,
+                "randomSpawnArea": false,
+                "randomWeightedSpawnArea": false,
+                "weightsSpawnArea": null,
+                "spawner": {
+                    "numberOfWaves": 3,
+                    "totalEnemiesPerWave": 1,
+                    "spawnerName": "1 N/B - enemy, waves: 3, delay 8s",
+                    "delayBetweenSpawns": 7.0,
+                    "$type": "WaveSpawner"
+                },
+                "$id": "4"
+            },
+            {
+                "$ref": "4"
+            }
+        ],
+        "parallelSpawns": [
+            {
+                "spawnGroupName": "drop coin (constant)",
+                "enemySpawnGroup": [
+                    {
+                        "$content": "Coin Variant",
+                        "$type": "Coin"
+                    }
+                ],
+                "inOrderEnemy": true,
+                "randomEnemy": false,
+                "randomWeightedEnemy": false,
+                "weightsEnemy": null,
+                "spawnPositions": [
+                    "CoinArea"
+                ],
+                "inOrderSpawn": true,
+                "randomSpawnArea": false,
+                "randomWeightedSpawnArea": false,
+                "weightsSpawnArea": null,
+                "spawner": {
+                    "chanceToSpawn": 100.0,
+                    "timeToStopSpawner": 9999.0,
+                    "spawnerName": "coin drop constant",
+                    "delayBetweenSpawns": 6.5,
+                    "$type": "ProbabilisticSpawner"
+                }
+            }
+        ],
+        "beginSequencedSpawnAtStart": true,
+        "beginParallelSpawnAtStart": true
+    },
+    "$type": "LevelInfo"
+}
