@@ -47,17 +47,19 @@
                 "randomWeightedEnemy": false,
                 "weightsEnemy": null,
                 "spawnPositions": [
-                    "Middle"
+                    "TopMiddle",
+                    "Middle",
+                    "BottomMiddle"
                 ],
-                "inOrderSpawn": true,
-                "randomSpawnArea": false,
+                "inOrderSpawn": false,
+                "randomSpawnArea": true,
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
                     "numberOfWaves": 3,
-                    "totalEnemiesPerWave": 1,
-                    "spawnerName": "1 N/B - enemy, waves: 3, delay 8s",
-                    "delayBetweenSpawns": 7.0,
+                    "totalEnemiesPerWave": 3,
+                    "spawnerName": "3 N/B - enemy, waves: 3, delay 8s",
+                    "delayBetweenSpawns": 8.0,
                     "$type": "WaveSpawner"
                 },
                 "$id": "5"
