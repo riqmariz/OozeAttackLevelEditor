@@ -95,7 +95,7 @@
                 "weightsSpawnArea": null,
                 "spawner": {
                     "totalEnemies": 4,
-                    "maxRefilTime": 15.0,
+                    "maxRefilTime": 20.0,
                     "howToCompleteSpawn": "TimeOut",
                     "spawnerName": "Final wave (E-basic: N/T; qnt: 3, refil: 2)",
                     "delayBetweenSpawns": 5.0,
