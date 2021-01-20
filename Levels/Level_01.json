@@ -1,11 +1,9 @@
 {
-    "buffsAvailable": [
-        "ApoloLight"
-    ],
+    "buffsAvailable": null,
     "levelData": {
-        "spawnDataName": "Level_01",
+        "spawnDataName": "Level_1",
         "timeToStartFirstSpawn": 2.0,
-        "timeBetweenSequencedSpawns": 8.0,
+        "timeBetweenSequencedSpawns": 9.0,
         "sequencedSpawns": [
             {
                 "spawnGroupName": "first coin",
@@ -18,7 +16,7 @@
                 "inOrderEnemy": true,
                 "randomEnemy": false,
                 "randomWeightedEnemy": false,
-                "weightsEnemy": null,
+                "weightsEnemy": [],
                 "spawnPositions": [
                     "CoinArea"
                 ],
@@ -29,13 +27,13 @@
                 "spawner": {
                     "totalEnemies": 1,
                     "howToComplete": "AfterKillingAllEnemies",
-                    "spawnerName": "single coin drop",
+                    "spawnerName": "Single coin drop",
                     "delayBetweenSpawns": 1.0,
                     "$type": "OnceSpawner"
                 }
             },
             {
-                "spawnGroupName": "basic enemy",
+                "spawnGroupName": "basic enemies",
                 "enemySpawnGroup": [
                     {
                         "$content": "Normal Basic Enemy Variant",
@@ -57,16 +55,13 @@
                     "numberOfWaves": 3,
                     "totalEnemiesPerWave": 1,
                     "spawnerName": "1 N/B - enemy, waves: 3, delay 8s",
-                    "delayBetweenSpawns": 8.0,
+                    "delayBetweenSpawns": 7.0,
                     "$type": "WaveSpawner"
                 },
-                "$id": "5"
+                "$id": "4"
             },
             {
-                "$ref": "5"
-            },
-            {
-                "$ref": "5"
+                "$ref": "4"
             }
         ],
         "parallelSpawns": [
@@ -93,7 +88,7 @@
                     "chanceToSpawn": 100.0,
                     "timeToStopSpawner": 9999.0,
                     "spawnerName": "coin drop constant",
-                    "delayBetweenSpawns": 6.0,
+                    "delayBetweenSpawns": 6.5,
                     "$type": "ProbabilisticSpawner"
                 }
             }
