@@ -4,7 +4,7 @@
     ],
     "levelData": {
         "spawnDataName": "Level_02",
-        "timeToStartFirstSpawn": 3.0,
+        "timeToStartFirstSpawn": 2.0,
         "timeBetweenSequencedSpawns": 9.0,
         "sequencedSpawns": [
             {
@@ -18,7 +18,7 @@
                 "inOrderEnemy": true,
                 "randomEnemy": false,
                 "randomWeightedEnemy": false,
-                "weightsEnemy": null,
+                "weightsEnemy": [],
                 "spawnPositions": [
                     "CoinArea"
                 ],
@@ -29,13 +29,13 @@
                 "spawner": {
                     "totalEnemies": 1,
                     "howToComplete": "AfterKillingAllEnemies",
-                    "spawnerName": "single coin drop",
+                    "spawnerName": "Single coin drop",
                     "delayBetweenSpawns": 1.0,
                     "$type": "OnceSpawner"
                 }
             },
             {
-                "spawnGroupName": "basic enemy",
+                "spawnGroupName": "basic enemies",
                 "enemySpawnGroup": [
                     {
                         "$content": "Normal Basic Enemy Variant",
@@ -47,21 +47,18 @@
                 "randomWeightedEnemy": false,
                 "weightsEnemy": null,
                 "spawnPositions": [
-                    "TopMiddle",
-                    "Middle",
-                    "BottomMiddle"
+                    "Middle"
                 ],
-                "inOrderSpawn": false,
-                "randomSpawnArea": true,
+                "inOrderSpawn": true,
+                "randomSpawnArea": false,
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
                     "numberOfWaves": 3,
                     "totalEnemiesPerWave": 1,
                     "spawnerName": "1 N/B - enemy, waves: 3, delay 8s",
-                    "delayBetweenSpawns": 8.0,
-                    "$type": "WaveSpawner",
-                    "$id": "6"
+                    "delayBetweenSpawns": 7.0,
+                    "$type": "WaveSpawner"
                 },
                 "$id": "5"
             },
@@ -69,7 +66,7 @@
                 "$ref": "5"
             },
             {
-                "spawnGroupName": "basic, tank enemies",
+                "spawnGroupName": "E-basic: N. e T. ",
                 "enemySpawnGroup": [
                     {
                         "$content": "Normal Basic Enemy Variant",
@@ -80,12 +77,12 @@
                         "$type": "CommonEnemy"
                     }
                 ],
-                "inOrderEnemy": false,
+                "inOrderEnemy": true,
                 "randomEnemy": false,
                 "randomWeightedEnemy": true,
                 "weightsEnemy": [
-                    90.0,
-                    10.0
+                    85.0,
+                    15.0
                 ],
                 "spawnPositions": [
                     "TopMiddle",
@@ -97,7 +94,12 @@
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
-                    "$ref": "6"
+                    "totalEnemies": 3,
+                    "maxRefilTime": 2.0,
+                    "howToCompleteSpawn": "KillingAllEnemies",
+                    "spawnerName": "Final wave (E-basic: N/T; qnt: 3, refil: 2)",
+                    "delayBetweenSpawns": 5.0,
+                    "$type": "RefillSpawner"
                 }
             }
         ],
@@ -125,7 +127,7 @@
                     "chanceToSpawn": 100.0,
                     "timeToStopSpawner": 9999.0,
                     "spawnerName": "coin drop constant",
-                    "delayBetweenSpawns": 6.0,
+                    "delayBetweenSpawns": 6.5,
                     "$type": "ProbabilisticSpawner"
                 }
             }
