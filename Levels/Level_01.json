@@ -117,10 +117,10 @@
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
-                    "chanceToSpawn": 100.0,
+                    "chanceToSpawn": 70.92145,
                     "timeToStopSpawner": 9999.0,
                     "spawnerName": "coin drop constant",
-                    "delayBetweenSpawns": 6.5,
+                    "delayBetweenSpawns": 7.0,
                     "$type": "ProbabilisticSpawner"
                 }
             }
