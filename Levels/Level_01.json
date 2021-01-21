@@ -1,11 +1,12 @@
 {
     "buffsAvailable": [
-        "ApoloLight"
+        "ApoloLight",
+        "AresRage"
     ],
     "levelData": {
-        "spawnDataName": "Level_1",
+        "spawnDataName": "Level_01",
         "timeToStartFirstSpawn": 2.0,
-        "timeBetweenSequencedSpawns": 9.0,
+        "timeBetweenSequencedSpawns": 8.0,
         "sequencedSpawns": [
             {
                 "spawnGroupName": "first coin",
@@ -35,6 +36,38 @@
                 }
             },
             {
+                "spawnGroupName": "First Enemies - ajusting game",
+                "enemySpawnGroup": [
+                    {
+                        "$content": "Normal Basic Enemy Variant",
+                        "$type": "CommonEnemy"
+                    }
+                ],
+                "inOrderEnemy": true,
+                "randomEnemy": false,
+                "randomWeightedEnemy": false,
+                "weightsEnemy": [
+                    80.0,
+                    20.0
+                ],
+                "spawnPositions": [
+                    "TopMiddle",
+                    "Middle",
+                    "BottomMiddle"
+                ],
+                "inOrderSpawn": false,
+                "randomSpawnArea": true,
+                "randomWeightedSpawnArea": false,
+                "weightsSpawnArea": null,
+                "spawner": {
+                    "numberOfWaves": 2,
+                    "totalEnemiesPerWave": 1,
+                    "spawnerName": "first enemies wave ajusting game",
+                    "delayBetweenSpawns": 7.0,
+                    "$type": "WaveSpawner"
+                }
+            },
+            {
                 "spawnGroupName": "basic enemies",
                 "enemySpawnGroup": [
                     {
@@ -56,14 +89,10 @@
                 "spawner": {
                     "numberOfWaves": 3,
                     "totalEnemiesPerWave": 1,
-                    "spawnerName": "1 N/B - enemy, waves: 3, delay 8s",
-                    "delayBetweenSpawns": 7.0,
+                    "spawnerName": "1 N/B - enemy, waves: 3, delay 5s",
+                    "delayBetweenSpawns": 5.0,
                     "$type": "WaveSpawner"
-                },
-                "$id": "5"
-            },
-            {
-                "$ref": "5"
+                }
             }
         ],
         "parallelSpawns": [
