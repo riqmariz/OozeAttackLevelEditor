@@ -1,7 +1,6 @@
 {
     "buffsAvailable": [
-        "ApoloLight",
-        "AresRage"
+        "ApoloLight"
     ],
     "levelData": {
         "spawnDataName": "Level_01",
@@ -80,7 +79,9 @@
                 "randomWeightedEnemy": false,
                 "weightsEnemy": null,
                 "spawnPositions": [
-                    "Middle"
+                    "TopMiddle",
+                    "Middle",
+                    "BottomMiddle"
                 ],
                 "inOrderSpawn": true,
                 "randomSpawnArea": false,
