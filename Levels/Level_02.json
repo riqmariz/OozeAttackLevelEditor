@@ -1,6 +1,7 @@
 {
     "buffsAvailable": [
-        "ApoloLight"
+        "ApoloLight",
+        "AresRage"
     ],
     "levelData": {
         "spawnDataName": "Level_02",
@@ -50,9 +51,11 @@
                     20.0
                 ],
                 "spawnPositions": [
+                    "Top",
                     "TopMiddle",
                     "Middle",
-                    "BottomMiddle"
+                    "BottomMiddle",
+                    "Bottom"
                 ],
                 "inOrderSpawn": false,
                 "randomSpawnArea": true,
@@ -79,9 +82,11 @@
                 "randomWeightedEnemy": false,
                 "weightsEnemy": null,
                 "spawnPositions": [
+                    "Top",
                     "TopMiddle",
                     "Middle",
-                    "BottomMiddle"
+                    "BottomMiddle",
+                    "Bottom"
                 ],
                 "inOrderSpawn": false,
                 "randomSpawnArea": true,
@@ -90,8 +95,8 @@
                 "spawner": {
                     "numberOfWaves": 3,
                     "totalEnemiesPerWave": 3,
-                    "spawnerName": "3 N/B - enemy, waves: 3, delay 8s",
-                    "delayBetweenSpawns": 9.0,
+                    "spawnerName": "3 N/B - enemy, waves: 3, delay 7s",
+                    "delayBetweenSpawns": 5.0,
                     "$type": "WaveSpawner"
                 },
                 "$id": "7"
@@ -112,9 +117,11 @@
                 "randomWeightedEnemy": false,
                 "weightsEnemy": null,
                 "spawnPositions": [
+                    "Top",
                     "TopMiddle",
                     "Middle",
-                    "BottomMiddle"
+                    "BottomMiddle",
+                    "Bottom"
                 ],
                 "inOrderSpawn": false,
                 "randomSpawnArea": true,
@@ -122,7 +129,7 @@
                 "weightsSpawnArea": null,
                 "spawner": {
                     "numberOfWaves": 1,
-                    "totalEnemiesPerWave": 10,
+                    "totalEnemiesPerWave": 15,
                     "spawnerName": "final wave ",
                     "delayBetweenSpawns": 2.0,
                     "$type": "WaveSpawner"
@@ -131,7 +138,7 @@
         ],
         "parallelSpawns": [
             {
-                "spawnGroupName": "drop coin (constant)",
+                "spawnGroupName": "drop coin (constant-1)",
                 "enemySpawnGroup": [
                     {
                         "$content": "Coin Variant",
@@ -150,10 +157,10 @@
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
-                    "chanceToSpawn": 100.0,
+                    "chanceToSpawn": 70.92145,
                     "timeToStopSpawner": 9999.0,
                     "spawnerName": "coin drop constant",
-                    "delayBetweenSpawns": 6.5,
+                    "delayBetweenSpawns": 7.0,
                     "$type": "ProbabilisticSpawner"
                 }
             }

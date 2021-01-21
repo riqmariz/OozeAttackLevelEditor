@@ -1,12 +1,13 @@
 {
     "buffsAvailable": [
         "ApoloLight",
-        "AresRage"
+        "AresRage",
+        "AtenasWisdom"
     ],
     "levelData": {
         "spawnDataName": "Level_03",
         "timeToStartFirstSpawn": 3.0,
-        "timeBetweenSequencedSpawns": 8.0,
+        "timeBetweenSequencedSpawns": 7.0,
         "sequencedSpawns": [
             {
                 "spawnGroupName": "first coin",
@@ -68,7 +69,7 @@
                 }
             },
             {
-                "spawnGroupName": "basic enemies",
+                "spawnGroupName": "basic enemies 1",
                 "enemySpawnGroup": [
                     {
                         "$content": "Normal Basic Enemy Variant",
@@ -80,9 +81,11 @@
                 "randomWeightedEnemy": false,
                 "weightsEnemy": null,
                 "spawnPositions": [
+                    "Top",
                     "TopMiddle",
                     "Middle",
-                    "BottomMiddle"
+                    "BottomMiddle",
+                    "Bottom"
                 ],
                 "inOrderSpawn": false,
                 "randomSpawnArea": true,
@@ -91,13 +94,13 @@
                 "spawner": {
                     "numberOfWaves": 3,
                     "totalEnemiesPerWave": 3,
-                    "spawnerName": "3 N/B - enemy, waves: 3, delay 8s",
-                    "delayBetweenSpawns": 9.0,
+                    "spawnerName": "3 N/B - enemy, waves: 3, delay 7s",
+                    "delayBetweenSpawns": 5.0,
                     "$type": "WaveSpawner"
                 }
             },
             {
-                "spawnGroupName": "E-basic Normal/Tank",
+                "spawnGroupName": "E-basic Normal/Tank 1",
                 "enemySpawnGroup": [
                     {
                         "$content": "Normal Basic Enemy Variant",
@@ -116,25 +119,27 @@
                     3.0
                 ],
                 "spawnPositions": [
+                    "Top",
                     "TopMiddle",
                     "Middle",
-                    "BottomMiddle"
+                    "BottomMiddle",
+                    "Bottom"
                 ],
                 "inOrderSpawn": false,
                 "randomSpawnArea": true,
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
-                    "totalEnemies": 5,
-                    "maxRefilTime": 40.0,
+                    "totalEnemies": 6,
+                    "maxRefilTime": 45.0,
                     "howToCompleteSpawn": "KillingAllEnemies",
-                    "spawnerName": "E: 5; refill: 40s; delay: 9s",
-                    "delayBetweenSpawns": 9.0,
+                    "spawnerName": "E: 5; refill: 45s; delay: 9s",
+                    "delayBetweenSpawns": 8.0,
                     "$type": "RefillSpawner"
                 }
             },
             {
-                "spawnGroupName": "final wave Normal/Tank",
+                "spawnGroupName": "final wave Normal/Tank 1",
                 "enemySpawnGroup": [
                     {
                         "$content": "Normal Basic Enemy Variant",
@@ -153,9 +158,11 @@
                     38.0
                 ],
                 "spawnPositions": [
+                    "Top",
                     "TopMiddle",
                     "Middle",
-                    "BottomMiddle"
+                    "BottomMiddle",
+                    "Bottom"
                 ],
                 "inOrderSpawn": false,
                 "randomSpawnArea": true,
@@ -165,7 +172,7 @@
                     "numberOfWaves": 1,
                     "totalEnemiesPerWave": 10,
                     "spawnerName": "final wave ",
-                    "delayBetweenSpawns": 2.0,
+                    "delayBetweenSpawns": 4.0,
                     "$type": "WaveSpawner"
                 },
                 "$id": "11"
