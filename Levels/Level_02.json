@@ -131,7 +131,7 @@
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
-                    "totalEnemies": 15,
+                    "totalEnemies": 10,
                     "maxRefilTime": 65.0,
                     "howToCompleteSpawn": "TimeOut",
                     "spawnerName": "Refill game inic-mid",
