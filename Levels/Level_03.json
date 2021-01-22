@@ -7,7 +7,7 @@
     "levelData": {
         "spawnDataName": "Level_03",
         "timeToStartFirstSpawn": 3.0,
-        "timeBetweenSequencedSpawns": 7.0,
+        "timeBetweenSequencedSpawns": 6.0,
         "sequencedSpawns": [
             {
                 "spawnGroupName": "first coin",
@@ -202,7 +202,7 @@
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
-                    "chanceToSpawn": 100.0,
+                    "chanceToSpawn": 70.86371,
                     "timeToStopSpawner": 9999.0,
                     "spawnerName": "coin drop constant",
                     "delayBetweenSpawns": 7.0,
