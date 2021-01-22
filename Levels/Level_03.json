@@ -93,9 +93,9 @@
                 "weightsSpawnArea": null,
                 "spawner": {
                     "numberOfWaves": 5,
-                    "totalEnemiesPerWave": 4,
+                    "totalEnemiesPerWave": 10,
                     "spawnerName": "3 N/B - enemy, waves: 3, delay 7s",
-                    "delayBetweenSpawns": 5.0,
+                    "delayBetweenSpawns": 4.0,
                     "$type": "WaveSpawner"
                 }
             },
@@ -130,11 +130,11 @@
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
-                    "totalEnemies": 6,
+                    "totalEnemies": 8,
                     "maxRefilTime": 45.0,
                     "howToCompleteSpawn": "KillingAllEnemies",
                     "spawnerName": "E: 5; refill: 45s; delay: 9s",
-                    "delayBetweenSpawns": 8.0,
+                    "delayBetweenSpawns": 3.0,
                     "$type": "RefillSpawner"
                 }
             },
@@ -170,9 +170,9 @@
                 "weightsSpawnArea": null,
                 "spawner": {
                     "numberOfWaves": 1,
-                    "totalEnemiesPerWave": 10,
+                    "totalEnemiesPerWave": 15,
                     "spawnerName": "final wave ",
-                    "delayBetweenSpawns": 4.0,
+                    "delayBetweenSpawns": 1.0,
                     "$type": "WaveSpawner"
                 },
                 "$id": "11"
