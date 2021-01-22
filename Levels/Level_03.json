@@ -93,10 +93,43 @@
                 "weightsSpawnArea": null,
                 "spawner": {
                     "numberOfWaves": 2,
-                    "totalEnemiesPerWave": 10,
+                    "totalEnemiesPerWave": 8,
                     "spawnerName": "N/F - enemy, waves: 2, delay 5s",
                     "delayBetweenSpawns": 5.0,
                     "$type": "WaveSpawner"
+                }
+            },
+            {
+                "spawnGroupName": "Tank 1",
+                "enemySpawnGroup": [
+                    {
+                        "$content": "Slow Basic Enemy Variant",
+                        "$type": "CommonEnemy"
+                    }
+                ],
+                "inOrderEnemy": true,
+                "randomEnemy": false,
+                "randomWeightedEnemy": false,
+                "weightsEnemy": [
+                    62.0
+                ],
+                "spawnPositions": [
+                    "Top",
+                    "TopMiddle",
+                    "Middle",
+                    "BottomMiddle",
+                    "Bottom"
+                ],
+                "inOrderSpawn": false,
+                "randomSpawnArea": true,
+                "randomWeightedSpawnArea": false,
+                "weightsSpawnArea": null,
+                "spawner": {
+                    "totalEnemies": 5,
+                    "howToComplete": "AfterKillingAllEnemies",
+                    "spawnerName": "Single coin drop",
+                    "delayBetweenSpawns": 1.0,
+                    "$type": "OnceSpawner"
                 }
             },
             {
@@ -115,8 +148,52 @@
                 "randomEnemy": false,
                 "randomWeightedEnemy": true,
                 "weightsEnemy": [
-                    72.0,
-                    28.0
+                    58.0,
+                    42.0
+                ],
+                "spawnPositions": [
+                    "Top",
+                    "TopMiddle",
+                    "Middle",
+                    "BottomMiddle",
+                    "Bottom"
+                ],
+                "inOrderSpawn": false,
+                "randomSpawnArea": true,
+                "randomWeightedSpawnArea": false,
+                "weightsSpawnArea": null,
+                "spawner": {
+                    "totalEnemies": 12,
+                    "maxRefilTime": 65.0,
+                    "howToCompleteSpawn": "TimeOut",
+                    "spawnerName": "Refill game inic-mid",
+                    "delayBetweenSpawns": 1.0,
+                    "$type": "RefillSpawner"
+                }
+            },
+            {
+                "spawnGroupName": "final wave Normal/Tank/fast",
+                "enemySpawnGroup": [
+                    {
+                        "$content": "Normal Basic Enemy Variant",
+                        "$type": "CommonEnemy"
+                    },
+                    {
+                        "$content": "Slow Basic Enemy Variant",
+                        "$type": "CommonEnemy"
+                    },
+                    {
+                        "$content": "Fast Basic Enemy Variant",
+                        "$type": "CommonEnemy"
+                    }
+                ],
+                "inOrderEnemy": false,
+                "randomEnemy": true,
+                "randomWeightedEnemy": false,
+                "weightsEnemy": [
+                    45.0,
+                    35.0,
+                    20.0
                 ],
                 "spawnPositions": [
                     "Top",
@@ -131,50 +208,11 @@
                 "weightsSpawnArea": null,
                 "spawner": {
                     "numberOfWaves": 1,
-                    "totalEnemiesPerWave": 10,
+                    "totalEnemiesPerWave": 20,
                     "spawnerName": "final wave ",
-                    "delayBetweenSpawns": 1.0,
-                    "$type": "WaveSpawner",
-                    "$id": "10"
+                    "delayBetweenSpawns": 3.0,
+                    "$type": "WaveSpawner"
                 }
-            },
-            {
-                "spawnGroupName": "final wave Normal/Tank 1",
-                "enemySpawnGroup": [
-                    {
-                        "$content": "Normal Basic Enemy Variant",
-                        "$type": "CommonEnemy"
-                    },
-                    {
-                        "$content": "Slow Basic Enemy Variant",
-                        "$type": "CommonEnemy"
-                    }
-                ],
-                "inOrderEnemy": false,
-                "randomEnemy": false,
-                "randomWeightedEnemy": true,
-                "weightsEnemy": [
-                    62.0,
-                    38.0
-                ],
-                "spawnPositions": [
-                    "Top",
-                    "TopMiddle",
-                    "Middle",
-                    "BottomMiddle",
-                    "Bottom"
-                ],
-                "inOrderSpawn": false,
-                "randomSpawnArea": true,
-                "randomWeightedSpawnArea": false,
-                "weightsSpawnArea": null,
-                "spawner": {
-                    "$ref": "10"
-                },
-                "$id": "11"
-            },
-            {
-                "$ref": "11"
             }
         ],
         "parallelSpawns": [
