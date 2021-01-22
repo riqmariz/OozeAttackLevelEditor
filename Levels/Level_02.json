@@ -98,24 +98,27 @@
                     "spawnerName": "N/B - enemy, waves: 3, delay 5s",
                     "delayBetweenSpawns": 5.0,
                     "$type": "WaveSpawner"
-                },
-                "$id": "7"
+                }
             },
             {
-                "$ref": "7"
-            },
-            {
-                "spawnGroupName": "Final Wave basic",
+                "spawnGroupName": "E-basic Normal/Tank 1",
                 "enemySpawnGroup": [
                     {
                         "$content": "Normal Basic Enemy Variant",
                         "$type": "CommonEnemy"
+                    },
+                    {
+                        "$content": "Slow Basic Enemy Variant",
+                        "$type": "CommonEnemy"
                     }
                 ],
                 "inOrderEnemy": false,
-                "randomEnemy": true,
-                "randomWeightedEnemy": false,
-                "weightsEnemy": null,
+                "randomEnemy": false,
+                "randomWeightedEnemy": true,
+                "weightsEnemy": [
+                    72.0,
+                    28.0
+                ],
                 "spawnPositions": [
                     "Top",
                     "TopMiddle",
@@ -128,10 +131,49 @@
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
-                    "numberOfWaves": 1,
+                    "totalEnemies": 15,
+                    "maxRefilTime": 65.0,
+                    "howToCompleteSpawn": "TimeOut",
+                    "spawnerName": "Refill game inic-mid",
+                    "delayBetweenSpawns": 1.0,
+                    "$type": "RefillSpawner"
+                }
+            },
+            {
+                "spawnGroupName": "final wave Normal/Tank 1",
+                "enemySpawnGroup": [
+                    {
+                        "$content": "Normal Basic Enemy Variant",
+                        "$type": "CommonEnemy"
+                    },
+                    {
+                        "$content": "Slow Basic Enemy Variant",
+                        "$type": "CommonEnemy"
+                    }
+                ],
+                "inOrderEnemy": false,
+                "randomEnemy": false,
+                "randomWeightedEnemy": true,
+                "weightsEnemy": [
+                    62.0,
+                    38.0
+                ],
+                "spawnPositions": [
+                    "Top",
+                    "TopMiddle",
+                    "Middle",
+                    "BottomMiddle",
+                    "Bottom"
+                ],
+                "inOrderSpawn": false,
+                "randomSpawnArea": true,
+                "randomWeightedSpawnArea": false,
+                "weightsSpawnArea": null,
+                "spawner": {
+                    "numberOfWaves": 2,
                     "totalEnemiesPerWave": 20,
                     "spawnerName": "final wave ",
-                    "delayBetweenSpawns": 2.0,
+                    "delayBetweenSpawns": 1.0,
                     "$type": "WaveSpawner"
                 }
             }
@@ -152,12 +194,12 @@
                 "spawnPositions": [
                     "CoinArea"
                 ],
-                "inOrderSpawn": true,
-                "randomSpawnArea": false,
+                "inOrderSpawn": false,
+                "randomSpawnArea": true,
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
-                    "chanceToSpawn": 70.0,
+                    "chanceToSpawn": 65.0,
                     "timeToStopSpawner": 9999.0,
                     "spawnerName": "coin drop constant",
                     "delayBetweenSpawns": 8.0,
