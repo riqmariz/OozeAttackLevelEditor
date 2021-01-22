@@ -50,9 +50,11 @@
                     20.0
                 ],
                 "spawnPositions": [
+                    "Top",
                     "TopMiddle",
                     "Middle",
-                    "BottomMiddle"
+                    "BottomMiddle",
+                    "Bottom"
                 ],
                 "inOrderSpawn": false,
                 "randomSpawnArea": true,
@@ -79,9 +81,11 @@
                 "randomWeightedEnemy": false,
                 "weightsEnemy": null,
                 "spawnPositions": [
+                    "Top",
                     "TopMiddle",
                     "Middle",
-                    "BottomMiddle"
+                    "BottomMiddle",
+                    "Bottom"
                 ],
                 "inOrderSpawn": true,
                 "randomSpawnArea": false,
@@ -89,7 +93,7 @@
                 "weightsSpawnArea": null,
                 "spawner": {
                     "numberOfWaves": 3,
-                    "totalEnemiesPerWave": 1,
+                    "totalEnemiesPerWave": 3,
                     "spawnerName": "1 N/B - enemy, waves: 3, delay 5s",
                     "delayBetweenSpawns": 5.0,
                     "$type": "WaveSpawner"
@@ -98,7 +102,7 @@
         ],
         "parallelSpawns": [
             {
-                "spawnGroupName": "drop coin (constant)",
+                "spawnGroupName": "drop coin (constant-1)",
                 "enemySpawnGroup": [
                     {
                         "$content": "Coin Variant",
@@ -117,10 +121,10 @@
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
-                    "chanceToSpawn": 70.92145,
+                    "chanceToSpawn": 75.0,
                     "timeToStopSpawner": 9999.0,
                     "spawnerName": "coin drop constant",
-                    "delayBetweenSpawns": 7.0,
+                    "delayBetweenSpawns": 8.0,
                     "$type": "ProbabilisticSpawner"
                 }
             }

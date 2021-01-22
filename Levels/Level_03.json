@@ -92,10 +92,10 @@
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
-                    "numberOfWaves": 5,
-                    "totalEnemiesPerWave": 15,
-                    "spawnerName": "3 N/B - enemy, waves: 3, delay 7s",
-                    "delayBetweenSpawns": 4.0,
+                    "numberOfWaves": 2,
+                    "totalEnemiesPerWave": 10,
+                    "spawnerName": "N/F - enemy, waves: 2, delay 5s",
+                    "delayBetweenSpawns": 5.0,
                     "$type": "WaveSpawner"
                 }
             },
@@ -111,12 +111,12 @@
                         "$type": "CommonEnemy"
                     }
                 ],
-                "inOrderEnemy": true,
-                "randomEnemy": true,
-                "randomWeightedEnemy": false,
+                "inOrderEnemy": false,
+                "randomEnemy": false,
+                "randomWeightedEnemy": true,
                 "weightsEnemy": [
-                    7.0,
-                    3.0
+                    72.0,
+                    28.0
                 ],
                 "spawnPositions": [
                     "Top",
@@ -130,12 +130,12 @@
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
-                    "totalEnemies": 10,
-                    "maxRefilTime": 45.0,
-                    "howToCompleteSpawn": "KillingAllEnemies",
-                    "spawnerName": "E: 5; refill: 45s; delay: 9s",
-                    "delayBetweenSpawns": 2.0,
-                    "$type": "RefillSpawner"
+                    "numberOfWaves": 1,
+                    "totalEnemiesPerWave": 10,
+                    "spawnerName": "final wave ",
+                    "delayBetweenSpawns": 1.0,
+                    "$type": "WaveSpawner",
+                    "$id": "10"
                 }
             },
             {
@@ -169,11 +169,7 @@
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
-                    "numberOfWaves": 1,
-                    "totalEnemiesPerWave": 20,
-                    "spawnerName": "final wave ",
-                    "delayBetweenSpawns": 1.0,
-                    "$type": "WaveSpawner"
+                    "$ref": "10"
                 },
                 "$id": "11"
             },
@@ -202,10 +198,10 @@
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
-                    "chanceToSpawn": 70.86371,
+                    "chanceToSpawn": 65.0,
                     "timeToStopSpawner": 9999.0,
                     "spawnerName": "coin drop constant",
-                    "delayBetweenSpawns": 7.0,
+                    "delayBetweenSpawns": 8.0,
                     "$type": "ProbabilisticSpawner"
                 }
             }

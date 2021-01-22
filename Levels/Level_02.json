@@ -77,8 +77,8 @@
                         "$type": "CommonEnemy"
                     }
                 ],
-                "inOrderEnemy": true,
-                "randomEnemy": false,
+                "inOrderEnemy": false,
+                "randomEnemy": true,
                 "randomWeightedEnemy": false,
                 "weightsEnemy": null,
                 "spawnPositions": [
@@ -94,8 +94,8 @@
                 "weightsSpawnArea": null,
                 "spawner": {
                     "numberOfWaves": 3,
-                    "totalEnemiesPerWave": 3,
-                    "spawnerName": "3 N/B - enemy, waves: 3, delay 7s",
+                    "totalEnemiesPerWave": 5,
+                    "spawnerName": "N/B - enemy, waves: 3, delay 5s",
                     "delayBetweenSpawns": 5.0,
                     "$type": "WaveSpawner"
                 },
@@ -129,7 +129,7 @@
                 "weightsSpawnArea": null,
                 "spawner": {
                     "numberOfWaves": 1,
-                    "totalEnemiesPerWave": 15,
+                    "totalEnemiesPerWave": 20,
                     "spawnerName": "final wave ",
                     "delayBetweenSpawns": 2.0,
                     "$type": "WaveSpawner"
@@ -157,10 +157,10 @@
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
-                    "chanceToSpawn": 70.92145,
+                    "chanceToSpawn": 70.0,
                     "timeToStopSpawner": 9999.0,
                     "spawnerName": "coin drop constant",
-                    "delayBetweenSpawns": 7.0,
+                    "delayBetweenSpawns": 8.0,
                     "$type": "ProbabilisticSpawner"
                 }
             }
