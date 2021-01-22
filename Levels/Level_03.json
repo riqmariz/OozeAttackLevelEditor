@@ -69,7 +69,7 @@
                 }
             },
             {
-                "spawnGroupName": "basic enemies 1",
+                "spawnGroupName": "basic enemies 2",
                 "enemySpawnGroup": [
                     {
                         "$content": "Normal Basic Enemy Variant",
@@ -92,8 +92,8 @@
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
-                    "numberOfWaves": 3,
-                    "totalEnemiesPerWave": 3,
+                    "numberOfWaves": 5,
+                    "totalEnemiesPerWave": 4,
                     "spawnerName": "3 N/B - enemy, waves: 3, delay 7s",
                     "delayBetweenSpawns": 5.0,
                     "$type": "WaveSpawner"
