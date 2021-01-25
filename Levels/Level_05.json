@@ -108,9 +108,9 @@
                 "weightsSpawnArea": null,
                 "spawner": {
                     "numberOfWaves": 2,
-                    "totalEnemiesPerWave": 8,
+                    "totalEnemiesPerWave": 12,
                     "spawnerName": "final wave ",
-                    "delayBetweenSpawns": 5.0,
+                    "delayBetweenSpawns": 2.0,
                     "$type": "WaveSpawner"
                 }
             },
@@ -150,10 +150,10 @@
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
-                    "totalEnemies": 12,
+                    "totalEnemies": 15,
                     "howToComplete": "AfterKillingAllEnemies",
-                    "spawnerName": "e: 12",
-                    "delayBetweenSpawns": 3.0,
+                    "spawnerName": "e: 15",
+                    "delayBetweenSpawns": 2.0,
                     "$type": "OnceSpawner"
                 }
             },
@@ -188,7 +188,7 @@
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
-                    "totalEnemies": 10,
+                    "totalEnemies": 15,
                     "enemyDelay": [
                         5.0,
                         5.0,
@@ -202,7 +202,7 @@
                         1.0
                     ],
                     "howToComplete": "AfterKillingAllEnemies",
-                    "spawnerName": "e:10 (veloc lenta)",
+                    "spawnerName": "e:15 (delay: 4s)",
                     "delayBetweenSpawns": 4.0,
                     "$type": "OrderTimeSpawner"
                 }
@@ -243,7 +243,7 @@
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
-                    "totalEnemies": 12,
+                    "totalEnemies": 18,
                     "maxRefilTime": 50.0,
                     "howToCompleteSpawn": "TimeOut",
                     "spawnerName": "Refill game inic-mid",
@@ -279,11 +279,11 @@
                 "randomEnemy": false,
                 "randomWeightedEnemy": true,
                 "weightsEnemy": [
+                    35.0,
                     40.0,
-                    20.0,
-                    30.0,
+                    50.0,
                     40.0,
-                    25.0
+                    30.0
                 ],
                 "spawnPositions": [
                     "Top",
@@ -298,8 +298,8 @@
                 "weightsSpawnArea": null,
                 "spawner": {
                     "numberOfWaves": 2,
-                    "totalEnemiesPerWave": 20,
-                    "spawnerName": "final wave lv4",
+                    "totalEnemiesPerWave": 25,
+                    "spawnerName": "final wave lv5",
                     "delayBetweenSpawns": 3.0,
                     "$type": "WaveSpawner"
                 }
