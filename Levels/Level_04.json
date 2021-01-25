@@ -212,7 +212,7 @@
         ],
         "parallelSpawns": [
             {
-                "spawnGroupName": "drop coin (constant)",
+                "spawnGroupName": "drop coin (constant, 9s)",
                 "enemySpawnGroup": [
                     {
                         "$content": "Coin Variant",
@@ -234,7 +234,7 @@
                     "chanceToSpawn": 60.0,
                     "timeToStopSpawner": 9999.0,
                     "spawnerName": "coin drop constant",
-                    "delayBetweenSpawns": 8.0,
+                    "delayBetweenSpawns": 9.0,
                     "$type": "ProbabilisticSpawner"
                 }
             }

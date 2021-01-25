@@ -1,7 +1,5 @@
 {
-    "buffsAvailable": [
-        "ApoloLight"
-    ],
+    "buffsAvailable": null,
     "levelData": {
         "spawnDataName": "Level_01",
         "timeToStartFirstSpawn": 2.0,
@@ -102,7 +100,7 @@
         ],
         "parallelSpawns": [
             {
-                "spawnGroupName": "drop coin (constant-1)",
+                "spawnGroupName": "drop coin (constant, 9s)",
                 "enemySpawnGroup": [
                     {
                         "$content": "Coin Variant",
@@ -121,10 +119,10 @@
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
-                    "chanceToSpawn": 75.0,
+                    "chanceToSpawn": 60.0,
                     "timeToStopSpawner": 9999.0,
                     "spawnerName": "coin drop constant",
-                    "delayBetweenSpawns": 8.0,
+                    "delayBetweenSpawns": 9.0,
                     "$type": "ProbabilisticSpawner"
                 }
             }
