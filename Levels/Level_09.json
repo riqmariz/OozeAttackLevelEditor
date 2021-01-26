@@ -112,6 +112,64 @@
                 }
             },
             {
+                "spawnGroupName": "N-basic, jumper/ T- Jumper, dodger / F- basic, dodger",
+                "enemySpawnGroup": [
+                    {
+                        "$content": "Normal Basic Enemy Variant",
+                        "$type": "CommonEnemy"
+                    },
+                    {
+                        "$content": "Normal Jumper Enemy Variant",
+                        "$type": "JumperEnemy"
+                    },
+                    {
+                        "$content": "Fast Basic Enemy Variant",
+                        "$type": "CommonEnemy"
+                    },
+                    {
+                        "$content": "Fast Changer Enemy Variant",
+                        "$type": "DodgerEnemy"
+                    },
+                    {
+                        "$content": "Tank Jumper Enemy Variant",
+                        "$type": "JumperEnemy"
+                    },
+                    {
+                        "$content": "Slow Dodger Enemy Variant",
+                        "$type": "DodgerEnemy"
+                    }
+                ],
+                "inOrderEnemy": false,
+                "randomEnemy": false,
+                "randomWeightedEnemy": true,
+                "weightsEnemy": [
+                    50.0,
+                    45.0,
+                    45.0,
+                    35.0,
+                    40.0,
+                    30.0
+                ],
+                "spawnPositions": [
+                    "Top",
+                    "TopMiddle",
+                    "Middle",
+                    "BottomMiddle",
+                    "Bottom"
+                ],
+                "inOrderSpawn": false,
+                "randomSpawnArea": true,
+                "randomWeightedSpawnArea": false,
+                "weightsSpawnArea": null,
+                "spawner": {
+                    "numberOfWaves": 1,
+                    "totalEnemiesPerWave": 35,
+                    "spawnerName": "e:50 / delay:1",
+                    "delayBetweenSpawns": 1.0,
+                    "$type": "WaveSpawner"
+                }
+            },
+            {
                 "spawnGroupName": "final wave lv5",
                 "enemySpawnGroup": [
                     {
@@ -158,7 +216,7 @@
                 "weightsSpawnArea": null,
                 "spawner": {
                     "numberOfWaves": 1,
-                    "totalEnemiesPerWave": 30,
+                    "totalEnemiesPerWave": 45,
                     "spawnerName": "final wave lv5",
                     "delayBetweenSpawns": 2.0,
                     "$type": "WaveSpawner"
@@ -216,7 +274,7 @@
                 "weightsSpawnArea": null,
                 "spawner": {
                     "numberOfWaves": 1,
-                    "totalEnemiesPerWave": 45,
+                    "totalEnemiesPerWave": 55,
                     "spawnerName": "final wave lv6",
                     "delayBetweenSpawns": 1.0,
                     "$type": "WaveSpawner"
@@ -279,9 +337,9 @@
                 "weightsSpawnArea": null,
                 "spawner": {
                     "numberOfWaves": 1,
-                    "totalEnemiesPerWave": 50,
+                    "totalEnemiesPerWave": 65,
                     "spawnerName": "Final wave lv7",
-                    "delayBetweenSpawns": 0.5,
+                    "delayBetweenSpawns": 1.0,
                     "$type": "WaveSpawner"
                 }
             },
@@ -347,69 +405,10 @@
                 "weightsSpawnArea": null,
                 "spawner": {
                     "totalEnemies": 70,
-                    "maxRefilTime": 60.0,
+                    "maxRefilTime": 50.0,
                     "howToCompleteSpawn": "TimeOut",
                     "spawnerName": "final wave lv8 ",
                     "delayBetweenSpawns": 0.5,
-                    "$type": "RefillSpawner"
-                }
-            },
-            {
-                "spawnGroupName": "N-basic, jumper/ T- Jumper, dodger / F- basic, dodger",
-                "enemySpawnGroup": [
-                    {
-                        "$content": "Normal Basic Enemy Variant",
-                        "$type": "CommonEnemy"
-                    },
-                    {
-                        "$content": "Normal Jumper Enemy Variant",
-                        "$type": "JumperEnemy"
-                    },
-                    {
-                        "$content": "Fast Basic Enemy Variant",
-                        "$type": "CommonEnemy"
-                    },
-                    {
-                        "$content": "Fast Changer Enemy Variant",
-                        "$type": "DodgerEnemy"
-                    },
-                    {
-                        "$content": "Tank Jumper Enemy Variant",
-                        "$type": "JumperEnemy"
-                    },
-                    {
-                        "$content": "Slow Dodger Enemy Variant",
-                        "$type": "DodgerEnemy"
-                    }
-                ],
-                "inOrderEnemy": false,
-                "randomEnemy": false,
-                "randomWeightedEnemy": true,
-                "weightsEnemy": [
-                    50.0,
-                    45.0,
-                    45.0,
-                    35.0,
-                    40.0,
-                    30.0
-                ],
-                "spawnPositions": [
-                    "Top",
-                    "TopMiddle",
-                    "Middle",
-                    "BottomMiddle",
-                    "Bottom"
-                ],
-                "inOrderSpawn": false,
-                "randomSpawnArea": true,
-                "randomWeightedSpawnArea": false,
-                "weightsSpawnArea": null,
-                "spawner": {
-                    "totalEnemies": 30,
-                    "maxRefilTime": 60.0,
-                    "howToCompleteSpawn": "TimeOut",
-                    "spawnerName": "t: 60s / e: 20/ delay: 1s",
-                    "delayBetweenSpawns": 1.0,
                     "$type": "RefillSpawner"
                 }
             },
@@ -461,9 +460,9 @@
                     35.0,
                     35.0,
                     45.0,
-                    42.0,
+                    45.0,
                     35.0,
-                    35.0,
+                    45.0,
                     45.0,
                     45.0
                 ],
@@ -479,8 +478,8 @@
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
-                    "totalEnemies": 90,
-                    "maxRefilTime": 65.0,
+                    "totalEnemies": 110,
+                    "maxRefilTime": 70.0,
                     "howToCompleteSpawn": "TimeOut",
                     "spawnerName": "FINAL FUCKING WAVE 9",
                     "delayBetweenSpawns": 1.0,
