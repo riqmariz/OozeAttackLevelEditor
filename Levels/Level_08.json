@@ -361,8 +361,8 @@
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
-                    "totalEnemies": 50,
-                    "maxRefilTime": 50.0,
+                    "totalEnemies": 65,
+                    "maxRefilTime": 60.0,
                     "howToCompleteSpawn": "TimeOut",
                     "spawnerName": "final wave lv8 ",
                     "delayBetweenSpawns": 0.5,
