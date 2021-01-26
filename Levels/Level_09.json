@@ -485,9 +485,9 @@
                 "weightsSpawnArea": null,
                 "spawner": {
                     "numberOfWaves": 1,
-                    "totalEnemiesPerWave": 120,
+                    "totalEnemiesPerWave": 180,
                     "spawnerName": "FINAL FUCKON WAVE NINE9",
-                    "delayBetweenSpawns": 0.5,
+                    "delayBetweenSpawns": 0.25,
                     "$type": "WaveSpawner"
                 }
             }
