@@ -1,0 +1,524 @@
+{
+    "buffsAvailable": [
+        "ApoloLight",
+        "AresRage",
+        "AtenasWisdom",
+        "ArtemisDexterity"
+    ],
+    "levelData": {
+        "spawnDataName": "Level_09",
+        "timeToStartFirstSpawn": 3.0,
+        "timeBetweenSequencedSpawns": 5.0,
+        "sequencedSpawns": [
+            {
+                "spawnGroupName": "first coin (2 coin)",
+                "enemySpawnGroup": [
+                    {
+                        "$content": "Coin Variant",
+                        "$type": "Coin"
+                    }
+                ],
+                "inOrderEnemy": true,
+                "randomEnemy": false,
+                "randomWeightedEnemy": false,
+                "weightsEnemy": [],
+                "spawnPositions": [
+                    "CoinArea"
+                ],
+                "inOrderSpawn": true,
+                "randomSpawnArea": false,
+                "randomWeightedSpawnArea": false,
+                "weightsSpawnArea": null,
+                "spawner": {
+                    "totalEnemies": 2,
+                    "howToComplete": "AfterKillingAllEnemies",
+                    "spawnerName": "Single coin drop",
+                    "delayBetweenSpawns": 1.0,
+                    "$type": "OnceSpawner"
+                }
+            },
+            {
+                "spawnGroupName": "First Enemies - ajusting game",
+                "enemySpawnGroup": [
+                    {
+                        "$content": "Normal Basic Enemy Variant",
+                        "$type": "CommonEnemy"
+                    }
+                ],
+                "inOrderEnemy": true,
+                "randomEnemy": false,
+                "randomWeightedEnemy": false,
+                "weightsEnemy": [],
+                "spawnPositions": [
+                    "Top",
+                    "TopMiddle",
+                    "Middle",
+                    "BottomMiddle",
+                    "Bottom"
+                ],
+                "inOrderSpawn": false,
+                "randomSpawnArea": true,
+                "randomWeightedSpawnArea": false,
+                "weightsSpawnArea": null,
+                "spawner": {
+                    "numberOfWaves": 2,
+                    "totalEnemiesPerWave": 1,
+                    "spawnerName": "first enemies wave ajusting game",
+                    "delayBetweenSpawns": 7.0,
+                    "$type": "WaveSpawner"
+                }
+            },
+            {
+                "spawnGroupName": "N-basic//T-dodger/F-jumper",
+                "enemySpawnGroup": [
+                    {
+                        "$content": "Normal Basic Enemy Variant",
+                        "$type": "CommonEnemy"
+                    },
+                    {
+                        "$content": "Slow Dodger Enemy Variant",
+                        "$type": "DodgerEnemy"
+                    },
+                    {
+                        "$content": "Fast Jumper Enemy Variant",
+                        "$type": "JumperEnemy"
+                    }
+                ],
+                "inOrderEnemy": false,
+                "randomEnemy": false,
+                "randomWeightedEnemy": true,
+                "weightsEnemy": [
+                    45.0,
+                    40.0,
+                    35.0
+                ],
+                "spawnPositions": [
+                    "Top",
+                    "TopMiddle",
+                    "Middle",
+                    "BottomMiddle",
+                    "Bottom"
+                ],
+                "inOrderSpawn": false,
+                "randomSpawnArea": true,
+                "randomWeightedSpawnArea": false,
+                "weightsSpawnArea": null,
+                "spawner": {
+                    "totalEnemies": 25,
+                    "howToComplete": "AfterKillingAllEnemies",
+                    "spawnerName": "e: 18 delay:2s",
+                    "delayBetweenSpawns": 2.0,
+                    "$type": "OnceSpawner"
+                }
+            },
+            {
+                "spawnGroupName": "final wave lv5",
+                "enemySpawnGroup": [
+                    {
+                        "$content": "Normal Basic Enemy Variant",
+                        "$type": "CommonEnemy"
+                    },
+                    {
+                        "$content": "Fast Jumper Enemy Variant",
+                        "$type": "JumperEnemy"
+                    },
+                    {
+                        "$content": "Slow Dodger Enemy",
+                        "$type": "DodgerEnemy"
+                    },
+                    {
+                        "$content": "Slow Basic Enemy Variant",
+                        "$type": "CommonEnemy"
+                    },
+                    {
+                        "$content": "Normal Jumper Enemy Variant",
+                        "$type": "JumperEnemy"
+                    }
+                ],
+                "inOrderEnemy": false,
+                "randomEnemy": false,
+                "randomWeightedEnemy": true,
+                "weightsEnemy": [
+                    50.0,
+                    35.0,
+                    30.0,
+                    40.0,
+                    30.0
+                ],
+                "spawnPositions": [
+                    "Top",
+                    "TopMiddle",
+                    "Middle",
+                    "BottomMiddle",
+                    "Bottom"
+                ],
+                "inOrderSpawn": false,
+                "randomSpawnArea": true,
+                "randomWeightedSpawnArea": false,
+                "weightsSpawnArea": null,
+                "spawner": {
+                    "numberOfWaves": 1,
+                    "totalEnemiesPerWave": 30,
+                    "spawnerName": "final wave lv5",
+                    "delayBetweenSpawns": 2.0,
+                    "$type": "WaveSpawner"
+                }
+            },
+            {
+                "spawnGroupName": "final wave lv6",
+                "enemySpawnGroup": [
+                    {
+                        "$content": "Normal Basic Enemy Variant",
+                        "$type": "CommonEnemy"
+                    },
+                    {
+                        "$content": "Normal Dodger Enemy Variant",
+                        "$type": "DodgerEnemy"
+                    },
+                    {
+                        "$content": "Fast Basic Enemy Variant",
+                        "$type": "CommonEnemy"
+                    },
+                    {
+                        "$content": "Fast Jumper Enemy Variant",
+                        "$type": "JumperEnemy"
+                    },
+                    {
+                        "$content": "Slow Basic Enemy Variant",
+                        "$type": "CommonEnemy"
+                    },
+                    {
+                        "$content": "Slow Dodger Enemy Variant",
+                        "$type": "DodgerEnemy"
+                    }
+                ],
+                "inOrderEnemy": false,
+                "randomEnemy": false,
+                "randomWeightedEnemy": true,
+                "weightsEnemy": [
+                    48.0,
+                    40.0,
+                    35.0,
+                    30.0,
+                    40.0,
+                    45.0
+                ],
+                "spawnPositions": [
+                    "Top",
+                    "TopMiddle",
+                    "Middle",
+                    "BottomMiddle",
+                    "Bottom"
+                ],
+                "inOrderSpawn": false,
+                "randomSpawnArea": true,
+                "randomWeightedSpawnArea": false,
+                "weightsSpawnArea": null,
+                "spawner": {
+                    "numberOfWaves": 1,
+                    "totalEnemiesPerWave": 45,
+                    "spawnerName": "final wave lv6",
+                    "delayBetweenSpawns": 1.0,
+                    "$type": "WaveSpawner"
+                }
+            },
+            {
+                "spawnGroupName": "final wave lv7",
+                "enemySpawnGroup": [
+                    {
+                        "$content": "Normal Basic Enemy Variant",
+                        "$type": "CommonEnemy"
+                    },
+                    {
+                        "$content": "Normal Dodger Enemy Variant",
+                        "$type": "DodgerEnemy"
+                    },
+                    {
+                        "$content": "Normal Jumper Enemy Variant",
+                        "$type": "JumperEnemy"
+                    },
+                    {
+                        "$content": "Slow Dodger Enemy Variant",
+                        "$type": "DodgerEnemy"
+                    },
+                    {
+                        "$content": "Fast Jumper Enemy Variant",
+                        "$type": "JumperEnemy"
+                    },
+                    {
+                        "$content": "Fast Basic Enemy Variant",
+                        "$type": "CommonEnemy"
+                    },
+                    {
+                        "$content": "Fast Changer Enemy Variant",
+                        "$type": "DodgerEnemy"
+                    }
+                ],
+                "inOrderEnemy": false,
+                "randomEnemy": false,
+                "randomWeightedEnemy": true,
+                "weightsEnemy": [
+                    40.0,
+                    40.0,
+                    40.0,
+                    40.0,
+                    35.0,
+                    35.0,
+                    35.0
+                ],
+                "spawnPositions": [
+                    "Top",
+                    "TopMiddle",
+                    "Middle",
+                    "BottomMiddle",
+                    "Bottom"
+                ],
+                "inOrderSpawn": false,
+                "randomSpawnArea": true,
+                "randomWeightedSpawnArea": false,
+                "weightsSpawnArea": null,
+                "spawner": {
+                    "numberOfWaves": 1,
+                    "totalEnemiesPerWave": 50,
+                    "spawnerName": "Final wave lv7",
+                    "delayBetweenSpawns": 0.5,
+                    "$type": "WaveSpawner"
+                }
+            },
+            {
+                "spawnGroupName": "Final Wave lv8",
+                "enemySpawnGroup": [
+                    {
+                        "$content": "Normal Basic Enemy Variant",
+                        "$type": "CommonEnemy"
+                    },
+                    {
+                        "$content": "Normal Dodger Enemy Variant",
+                        "$type": "DodgerEnemy"
+                    },
+                    {
+                        "$content": "Normal Jumper Enemy Variant",
+                        "$type": "JumperEnemy"
+                    },
+                    {
+                        "$content": "Fast Basic Enemy Variant",
+                        "$type": "CommonEnemy"
+                    },
+                    {
+                        "$content": "Fast Changer Enemy Variant",
+                        "$type": "DodgerEnemy"
+                    },
+                    {
+                        "$content": "Fast Jumper Enemy Variant",
+                        "$type": "JumperEnemy"
+                    },
+                    {
+                        "$content": "Slow Basic Enemy Variant",
+                        "$type": "CommonEnemy"
+                    },
+                    {
+                        "$content": "Slow Dodger Enemy Variant",
+                        "$type": "DodgerEnemy"
+                    }
+                ],
+                "inOrderEnemy": false,
+                "randomEnemy": false,
+                "randomWeightedEnemy": true,
+                "weightsEnemy": [
+                    55.0,
+                    40.0,
+                    40.0,
+                    35.0,
+                    35.0,
+                    35.0,
+                    40.0,
+                    40.0
+                ],
+                "spawnPositions": [
+                    "Top",
+                    "TopMiddle",
+                    "Middle",
+                    "BottomMiddle",
+                    "Bottom"
+                ],
+                "inOrderSpawn": false,
+                "randomSpawnArea": true,
+                "randomWeightedSpawnArea": false,
+                "weightsSpawnArea": null,
+                "spawner": {
+                    "totalEnemies": 70,
+                    "maxRefilTime": 60.0,
+                    "howToCompleteSpawn": "TimeOut",
+                    "spawnerName": "final wave lv8 ",
+                    "delayBetweenSpawns": 0.5,
+                    "$type": "RefillSpawner"
+                }
+            },
+            {
+                "spawnGroupName": "N-basic, jumper/ T- Jumper, dodger / F- basic, dodger",
+                "enemySpawnGroup": [
+                    {
+                        "$content": "Normal Basic Enemy Variant",
+                        "$type": "CommonEnemy"
+                    },
+                    {
+                        "$content": "Normal Jumper Enemy Variant",
+                        "$type": "JumperEnemy"
+                    },
+                    {
+                        "$content": "Fast Basic Enemy Variant",
+                        "$type": "CommonEnemy"
+                    },
+                    {
+                        "$content": "Fast Changer Enemy Variant",
+                        "$type": "DodgerEnemy"
+                    },
+                    {
+                        "$content": "Tank Jumper Enemy Variant",
+                        "$type": "JumperEnemy"
+                    },
+                    {
+                        "$content": "Slow Dodger Enemy Variant",
+                        "$type": "DodgerEnemy"
+                    }
+                ],
+                "inOrderEnemy": false,
+                "randomEnemy": false,
+                "randomWeightedEnemy": true,
+                "weightsEnemy": [
+                    50.0,
+                    45.0,
+                    45.0,
+                    35.0,
+                    40.0,
+                    30.0
+                ],
+                "spawnPositions": [
+                    "Top",
+                    "TopMiddle",
+                    "Middle",
+                    "BottomMiddle",
+                    "Bottom"
+                ],
+                "inOrderSpawn": false,
+                "randomSpawnArea": true,
+                "randomWeightedSpawnArea": false,
+                "weightsSpawnArea": null,
+                "spawner": {
+                    "totalEnemies": 30,
+                    "maxRefilTime": 60.0,
+                    "howToCompleteSpawn": "TimeOut",
+                    "spawnerName": "t: 60s / e: 20/ delay: 1s",
+                    "delayBetweenSpawns": 1.0,
+                    "$type": "RefillSpawner"
+                }
+            },
+            {
+                "spawnGroupName": "final wave lv9",
+                "enemySpawnGroup": [
+                    {
+                        "$content": "Normal Basic Enemy Variant",
+                        "$type": "CommonEnemy"
+                    },
+                    {
+                        "$content": "Normal Dodger Enemy Variant",
+                        "$type": "DodgerEnemy"
+                    },
+                    {
+                        "$content": "Normal Jumper Enemy Variant",
+                        "$type": "JumperEnemy"
+                    },
+                    {
+                        "$content": "Fast Basic Enemy Variant",
+                        "$type": "CommonEnemy"
+                    },
+                    {
+                        "$content": "Fast Changer Enemy Variant",
+                        "$type": "DodgerEnemy"
+                    },
+                    {
+                        "$content": "Fast Jumper Enemy Variant",
+                        "$type": "JumperEnemy"
+                    },
+                    {
+                        "$content": "Slow Basic Enemy Variant",
+                        "$type": "CommonEnemy"
+                    },
+                    {
+                        "$content": "Slow Dodger Enemy Variant",
+                        "$type": "DodgerEnemy"
+                    },
+                    {
+                        "$content": "Tank Jumper Enemy Variant",
+                        "$type": "JumperEnemy"
+                    }
+                ],
+                "inOrderEnemy": false,
+                "randomEnemy": false,
+                "randomWeightedEnemy": true,
+                "weightsEnemy": [
+                    35.0,
+                    35.0,
+                    35.0,
+                    45.0,
+                    42.0,
+                    35.0,
+                    35.0,
+                    45.0,
+                    45.0
+                ],
+                "spawnPositions": [
+                    "Top",
+                    "TopMiddle",
+                    "Middle",
+                    "BottomMiddle",
+                    "Bottom"
+                ],
+                "inOrderSpawn": false,
+                "randomSpawnArea": true,
+                "randomWeightedSpawnArea": false,
+                "weightsSpawnArea": null,
+                "spawner": {
+                    "totalEnemies": 90,
+                    "maxRefilTime": 65.0,
+                    "howToCompleteSpawn": "TimeOut",
+                    "spawnerName": "FINAL FUCKING WAVE 9",
+                    "delayBetweenSpawns": 1.0,
+                    "$type": "RefillSpawner"
+                }
+            }
+        ],
+        "parallelSpawns": [
+            {
+                "spawnGroupName": "drop coin (constant, 8s)",
+                "enemySpawnGroup": [
+                    {
+                        "$content": "Coin Variant",
+                        "$type": "Coin"
+                    }
+                ],
+                "inOrderEnemy": true,
+                "randomEnemy": false,
+                "randomWeightedEnemy": false,
+                "weightsEnemy": null,
+                "spawnPositions": [
+                    "CoinArea"
+                ],
+                "inOrderSpawn": true,
+                "randomSpawnArea": false,
+                "randomWeightedSpawnArea": false,
+                "weightsSpawnArea": null,
+                "spawner": {
+                    "chanceToSpawn": 60.0,
+                    "timeToStopSpawner": 9999.0,
+                    "spawnerName": "coin drop constant",
+                    "delayBetweenSpawns": 8.0,
+                    "$type": "ProbabilisticSpawner"
+                }
+            }
+        ],
+        "beginSequencedSpawnAtStart": true,
+        "beginParallelSpawnAtStart": true
+    },
+    "$type": "LevelInfo"
+}
