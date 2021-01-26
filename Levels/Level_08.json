@@ -109,7 +109,7 @@
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
-                    "totalEnemies": 18,
+                    "totalEnemies": 25,
                     "howToComplete": "AfterKillingAllEnemies",
                     "spawnerName": "e: 18 delay:2s",
                     "delayBetweenSpawns": 2.0,
@@ -169,7 +169,7 @@
                 "weightsSpawnArea": null,
                 "spawner": {
                     "numberOfWaves": 1,
-                    "totalEnemiesPerWave": 35,
+                    "totalEnemiesPerWave": 45,
                     "spawnerName": "final wave lv6",
                     "delayBetweenSpawns": 1.0,
                     "$type": "WaveSpawner"
@@ -226,7 +226,7 @@
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
-                    "totalEnemies": 25,
+                    "totalEnemies": 30,
                     "maxRefilTime": 60.0,
                     "howToCompleteSpawn": "TimeOut",
                     "spawnerName": "t: 60s / e: 20/ delay: 1s",
@@ -291,7 +291,7 @@
                 "weightsSpawnArea": null,
                 "spawner": {
                     "numberOfWaves": 1,
-                    "totalEnemiesPerWave": 40,
+                    "totalEnemiesPerWave": 50,
                     "spawnerName": "Final wave lv7",
                     "delayBetweenSpawns": 0.5,
                     "$type": "WaveSpawner"
@@ -361,7 +361,7 @@
                 "randomWeightedSpawnArea": false,
                 "weightsSpawnArea": null,
                 "spawner": {
-                    "totalEnemies": 65,
+                    "totalEnemies": 70,
                     "maxRefilTime": 60.0,
                     "howToCompleteSpawn": "TimeOut",
                     "spawnerName": "final wave lv8 ",
