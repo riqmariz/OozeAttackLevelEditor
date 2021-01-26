@@ -280,7 +280,7 @@
                 "weightsSpawnArea": null,
                 "spawner": {
                     "numberOfWaves": 1,
-                    "totalEnemiesPerWave": 30,
+                    "totalEnemiesPerWave": 35,
                     "spawnerName": "final wave lv6",
                     "delayBetweenSpawns": 1.0,
                     "$type": "WaveSpawner"
@@ -343,7 +343,7 @@
                 "weightsSpawnArea": null,
                 "spawner": {
                     "numberOfWaves": 1,
-                    "totalEnemiesPerWave": 45,
+                    "totalEnemiesPerWave": 50,
                     "spawnerName": "Final wave lv7",
                     "delayBetweenSpawns": 0.5,
                     "$type": "WaveSpawner"
